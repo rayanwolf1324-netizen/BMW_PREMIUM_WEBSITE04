@@ -1,0 +1,96 @@
+<svg width="320" height="460" viewBox="0 0 320 460"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="320" height="460" rx="22"
+        fill="#0b0f14"/>
+
+  <!-- BMW accent bar -->
+  <rect x="0" y="0" width="320" height="60" rx="22"
+        fill="#111827"/>
+
+  <!-- BMW text -->
+  <text x="20" y="38"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="20"
+        fill="#3b82f6"
+        font-weight="bold">
+    BMW
+  </text>
+
+  <text x="85" y="38"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="18"
+        fill="#ffffff">
+    Calculator
+  </text>
+
+  <!-- Display -->
+  <rect x="20" y="80" width="280" height="70" rx="10"
+        fill="#020617"
+        stroke="#1e293b"
+        stroke-width="2"/>
+
+  <text x="285" y="125"
+        font-family="Courier New, monospace"
+        font-size="28"
+        fill="#ffffff"
+        text-anchor="end">
+    0
+  </text>
+
+  <!-- Buttons -->
+  <g fill="#111827" stroke="#1e293b" stroke-width="1">
+    <!-- Row 1 -->
+    <rect x="20" y="170" width="60" height="50" rx="8"/>
+    <rect x="90" y="170" width="60" height="50" rx="8"/>
+    <rect x="160" y="170" width="60" height="50" rx="8"/>
+    <rect x="230" y="170" width="70" height="50" rx="8"/>
+
+    <!-- Row 2 -->
+    <rect x="20" y="230" width="60" height="50" rx="8"/>
+    <rect x="90" y="230" width="60" height="50" rx="8"/>
+    <rect x="160" y="230" width="60" height="50" rx="8"/>
+    <rect x="230" y="230" width="70" height="50" rx="8"/>
+
+    <!-- Row 3 -->
+    <rect x="20" y="290" width="60" height="50" rx="8"/>
+    <rect x="90" y="290" width="60" height="50" rx="8"/>
+    <rect x="160" y="290" width="60" height="50" rx="8"/>
+    <rect x="230" y="290" width="70" height="50" rx="8"/>
+
+    <!-- Row 4 -->
+    <rect x="20" y="350" width="130" height="50" rx="8"/>
+    <rect x="160" y="350" width="60" height="50" rx="8"/>
+    <rect x="230" y="350" width="70" height="50" rx="8"
+          fill="#2563eb"/>
+  </g>
+
+  <!-- Button text -->
+  <g fill="#ffffff"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     dominant-baseline="middle">
+
+    <text x="50"  y="195">7</text>
+    <text x="120" y="195">8</text>
+    <text x="190" y="195">9</text>
+    <text x="265" y="195">÷</text>
+
+    <text x="50"  y="255">4</text>
+    <text x="120" y="255">5</text>
+    <text x="190" y="255">6</text>
+    <text x="265" y="255">×</text>
+
+    <text x="50"  y="315">1</text>
+    <text x="120" y="315">2</text>
+    <text x="190" y="315">3</text>
+    <text x="265" y="315">−</text>
+
+    <text x="85"  y="375">0</text>
+    <text x="190" y="375">.</text>
+    <text x="265" y="375">=</text>
+  </g>
+
+</svg>
