@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMW Premium | Compare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><span class="brand-dot"></span>BMW</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="electric.html">Electric</a></li>
+          <li class="nav-item"><a class="nav-link" href="motorsport.html">Motorsport</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="section-title">Compare BMW Models</h1>
+
+    <div class="panel mb-3">
+      <label for="categoryFilter" class="form-label fw-bold">Filter by category</label>
+      <select id="categoryFilter" class="form-select">
+        <option value="all">All</option>
+        <option value="mid">Mid Luxury</option>
+        <option value="suv">Premium SUV</option>
+        <option value="high">High Luxury</option>
+      </select>
+      <p class="small-hint mt-2 mb-0">This uses JavaScript to filter table rows (DOM interactivity).</p>
+    </div>
+
+    <div class="table-responsive panel">
+      <table class="table table-dark table-bordered text-center align-middle" id="compareTable">
+        <caption class="text-white-50">Comparison of selected BMW models (student dataset)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Model</th>
+            <th scope="col">Engine</th>
+            <th scope="col">Power</th>
+            <th scope="col">0–100 km/h</th>
+            <th scope="col">Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-cat="mid">
+            <th scope="row">BMW 3 Series</th>
+            <td>2.0L Turbo</td>
+            <td>258 HP</td>
+            <td>5.8 s</td>
+            <td>Mid Luxury</td>
+          </tr>
+          <tr data-cat="suv">
+            <th scope="row">BMW X5</th>
+            <td>3.0L Turbo</td>
+            <td>335 HP</td>
+            <td>5.3 s</td>
+            <td>Premium SUV</td>
+          </tr>
+          <tr data-cat="high">
+            <th scope="row">BMW i8</th>
+            <td>Hybrid</td>
+            <td>369 HP</td>
+            <td>4.4 s</td>
+            <td>High Luxury</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</main>
+
+<footer class="py-4 text-center">
+  <div class="container"><small>© 2026 BMW Premium | Student Project</small></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

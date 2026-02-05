@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BMW | Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="bmw-dot me-2"></span>BMW
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+          <li class="nav-item"><a class="nav-link" href="electric.html">Electric</a></li>
+          <li class="nav-item"><a class="nav-link" href="motorsport.html">Motorsport</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="calculator.html">Tools</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container my-5">
+
+  <section class="text-center mb-4">
+    <img src="images/calculator.svg" alt="BMW-style calculator icon" class="calc-icon mb-3">
+    <h1 class="mb-2">BMW Tools</h1>
+    <p class="text-muted m-0">Premium calculator for quick demo during presentation (keyboard supported).</p>
+  </section>
+
+  <section class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+
+      <div class="bmw-panel p-3 p-md-4">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h2 class="h5 m-0">Calculator</h2>
+          <span class="badge text-bg-dark" id="calcMemoryBadge">MEM: —</span>
+        </div>
+
+        <!-- Display -->
+        <div class="calc-display mb-3" aria-live="polite">
+          <div class="calc-mini" id="calcMini">Ready</div>
+          <div class="calc-main" id="calcMain">0</div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="calc-grid" role="group" aria-label="Calculator buttons">
+          <button class="calc-btn calc-btn-fn" data-action="clear">AC</button>
+          <button class="calc-btn calc-btn-fn" data-action="backspace">⌫</button>
+          <button class="calc-btn calc-btn-fn" data-action="percent">%</button>
+          <button class="calc-btn calc-btn-op" data-value="/">÷</button>
+
+          <button class="calc-btn" data-value="7">7</button>
+          <button class="calc-btn" data-value="8">8</button>
+          <button class="calc-btn" data-value="9">9</button>
+          <button class="calc-btn calc-btn-op" data-value="*">×</button>
+
+          <button class="calc-btn" data-value="4">4</button>
+          <button class="calc-btn" data-value="5">5</button>
+          <button class="calc-btn" data-value="6">6</button>
+          <button class="calc-btn calc-btn-op" data-value="-">−</button>
+
+          <button class="calc-btn" data-value="1">1</button>
+          <button class="calc-btn" data-value="2">2</button>
+          <button class="calc-btn" data-value="3">3</button>
+          <button class="calc-btn calc-btn-op" data-value="+">+</button>
+
+          <button class="calc-btn calc-btn-fn" data-action="memory">M+</button>
+          <button class="calc-btn" data-value="0">0</button>
+          <button class="calc-btn" data-value=".">.</button>
+          <button class="calc-btn calc-btn-eq" data-action="equals">=</button>
+        </div>
+
+        <div class="mt-3 small text-muted">
+          Tip: Use keyboard — numbers, + - * /, Enter (=), Backspace, Esc (AC)
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="bg-black text-white text-center py-4">
+  <p class="m-0">© 2026 BMW Tools | Student Website Project</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
